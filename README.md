@@ -1,7 +1,7 @@
 # OgSwap
 Automatic og swap transaction
 
-![Tampilan Bot](image1.jpg)
+![Tampilan Bot](og.jpg)
 
 ## Main Features
 
