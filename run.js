@@ -207,7 +207,7 @@ readline.question("Masukkan jumlah USDT yang ingin di-swap: ", async (usdtAmount
     readline.question("Masukkan jumlah ETH yang ingin di-swap: ", async (ethAmount) => {
         const ethAmountIn = ethers.parseUnits(ethAmount, 18); // Konversi ke unit yang sesuai
 
-        readline.question("Masukkan jumlah transaksi swap per akun: ", async (count) => {
+        readline.question("Masukkan jumlah transaksi swap per Hari: ", async (count) => {
             const swapCount = parseInt(count, 10); // Konversi ke integer
             readline.close();
 
