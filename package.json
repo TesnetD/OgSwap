@@ -1,0 +1,16 @@
+{
+  "name": "autoswap-oglabs",
+  "version": "1.0.0",
+  "description": "Automated transaction script for swapping USDT to ETH on 0g.ai testnet",
+  "main": "coba.js",
+  "scripts": {
+    "start": "node coba.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^6.10.0", 
+    "wcwidth": "^1.0.1"
+  }
+}
