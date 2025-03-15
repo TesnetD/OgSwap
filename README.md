@@ -5,7 +5,7 @@ Automatic og swap transaction
 
 ## Main Features
 
-- Automatic Running Every Day
+- Automatic Running Every 09.00 Am
 - Supports multi account
 - Ensures correct gas fee calculation and nonce handling.
 
@@ -15,7 +15,7 @@ Automatic og swap transaction
 
 1. Clone Code
    ```sh
-   git clone https://github.com/jeripangestu/Monad-V2.git
+   git clone https://github.com/jeripangestu/OgSwap.git
    ```
 2. Navigate to the project directory:
    ```sh
