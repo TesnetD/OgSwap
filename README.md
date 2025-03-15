@@ -34,9 +34,8 @@ Automatic og swap transaction
 
 
 ### Notes
-- Ensure you have a working proxy for the multi account feature.
 - Always keep your private key secure.
-- Ensure you have sufficient MON balance in your wallet before running the bot.
+- Ensure you have sufficient Aogi balance in your wallet before running the bot.
 - This bot is designed for use on the testnet. If you intend to use it on the mainnet, make sure to update the RPC URL and contract addresses accordingly.
 - Use this bot responsibly. The author is not responsible for any potential losses.
 
