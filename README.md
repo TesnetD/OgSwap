@@ -50,4 +50,3 @@ Made with ❤️ by Jeri Tamvan. If you like this project, don't forget to give 
 Join Telegram Channel
 [Telegram Channel](https://t.me/diskusiparapemulung)
 
-Credits Zaptovcavis
