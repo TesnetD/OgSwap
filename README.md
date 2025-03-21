@@ -46,6 +46,4 @@ This project is licensed under the MIT License.
 
 
 
-Join Telegram Channel
-[Telegram Channel](https://t.me/endingdrop)
 
