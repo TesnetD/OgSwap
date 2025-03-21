@@ -14,7 +14,7 @@ Automatic og swap transaction
 
 1. Clone Code
    ```sh
-   git clone https://github.com/jeripangestu/OgSwap.git
+   https://github.com/TesnetD/OgSwap.git
    ```
 2. Navigate to the project directory:
    ```sh
