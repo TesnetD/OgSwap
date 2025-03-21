@@ -23,7 +23,6 @@ const privateKeys = fs.readFileSync("pk.txt", "utf8").trim().split("\n");
 
 // Setup provider
 const provider = new ethers.JsonRpcProvider(RPC_ENDPOINTS[0]);
-
 function showBanner() {
     const banner = `
     \x1b[34m███████╗███╗   ██╗██████╗     \x1b[0m   
@@ -31,17 +30,16 @@ function showBanner() {
   \x1b[34m█████╗  ██╔██╗ ██║██║  ██║    \x1b[0m   
  \x1b[34m██╔══╝  ██║╚██╗██║██║  ██║    \x1b[0m   
 \x1b[34m███████╗██║ ╚████║██████╔╝    \x1b[0m   
-\x1b[34m╚══════╝╚═╝  ╚═══╝╚═════╝     \x1b[0m   
-               
+\x1b[34m╚══════╝╚═╝  ╚═══╝╚═════╝     \x1b[0m
+    
 ====================================================    
      \x1b[35mAutomation\x1b[0m         : \x1b[36mAuto Install Node and Bot\x1b[0m    
-     \x1b[35mTelegram Channel\x1b[0m   : \x1b[36m@endingdrop\x1b[0m     
+     \x1b[35mTelegram Channel\x1b[0m   : \x1b[36m@endingdrop\x1b[0m    
+     \x1b[35mTelegram Group\x1b[0m     : \x1b[36m@endingdrop\x1b[0m    
 ====================================================    
     `;
     console.log(banner);
 }
-
-showBanner();
 
 function logSuccess(message) {
     const statusText = "✅ [SUCCESS]"; 
@@ -58,10 +56,10 @@ function logError(message) {
 }
 
 function logInfo(message) {
-    const statusText = "ℹ️ [INFO]"; 
-    const statusTextWithColor = "\x1b[34mℹ️ [INFO]\x1b[0m"; 
+    const statusText = "ℹ️ [INFO]";
+    const statusTextWithColor = "\x1b[33mℹ️ [INFO]\x1b[0m"; 
     const paddedStatus = statusTextWithColor.padEnd(20 - (wcwidth(statusText) - statusText.length));
-    console.log(`${paddedStatus} \x1b[34m${message}\x1b[0m`); 
+    console.log(`${paddedStatus} \x1b[33m${message}\x1b[0m`); 
 }
 
 function showCountdown(targetTime) {
@@ -126,7 +124,6 @@ async function swapUsdtToEth(wallet, amountIn, routerAddress) {
         logError(`[${wallet.address}] Error swapping USDT to ETH: ${error.message}`);
     }
 }
-
 // Fungsi untuk swap ETH ke USDT
 async function swapEthToUsdt(wallet, amountIn, routerAddress) {
     try {
@@ -204,10 +201,10 @@ readline.question(
             return;
         }
         readline.question("Masukkan jumlah USDT yang ingin di-swap: ", async (usdtAmount) => {
-            const usdtAmountIn = ethers.utils.parseUnits(usdtAmount, 18); // Konversi ke unit yang sesuai
+            const usdtAmountIn = ethers.parseUnits(usdtAmount, 18); // Konversi ke unit yang sesuai
 
             readline.question("Masukkan jumlah ETH yang ingin di-swap: ", async (ethAmount) => {
-                const ethAmountIn = ethers.utils.parseUnits(ethAmount, 18); // Konversi ke unit yang sesuai
+                const ethAmountIn = ethers.parseUnits(ethAmount, 18); // Konversi ke unit yang sesuai
 
                 readline.question("Masukkan jumlah transaksi swap per akun: ", async (count) => {
                     const swapCount = parseInt(count, 10); // Konversi ke integer
