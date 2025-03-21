@@ -59,12 +59,6 @@ function logError(message) {
     console.log(`${paddedStatus} \x1b[31m${message}\x1b[0m`); 
 }
 
-function logInfo(message) {
-    const statusText = "ℹ️ [INFO]";
-    const statusTextWithColor = "\x1b[33mℹ️ [INFO]\x1b[0m"; 
-    const paddedStatus = statusTextWithColor.padEnd(20 - (wcwidth(statusText) - statusText.length));
-    console.log(`${paddedStatus} \x1b[33m${message}\x1b[0m`); 
-}
 
 function showCountdown(targetTime) {
     const now = new Date();
